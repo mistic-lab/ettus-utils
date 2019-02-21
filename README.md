@@ -45,7 +45,7 @@ Once installed, you should be able to use the scripts like:
 
 > Make sure your Linux kernel and software are updating.  I ran into a problem with the usb device not being mounted until I updated the system software.
 
-> NOTE: The following docs are just here for information, but all has been codified in the `EThreeTen` utility in this directory
+> NOTE: The following docs are just here for information, but all has been codified in the [`EThreeTen`](./EThreeTen.sh) utility in this directory
 
 #### Mounting Host directory into E310
 - Log into E310:
