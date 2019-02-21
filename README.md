@@ -45,16 +45,19 @@ Once installed, you should be able to use the scripts like:
 
 > Make sure your Linux kernel and software are updating.  I ran into a problem with the usb device not being mounted until I updated the system software.
 
+> NOTE: The following docs are just here for information, but all has been codified in the `EThreeTen` utility in this directory
+
 #### Mounting Host directory into E310
 - Log into E310:
-  `cjam@mistic-spruce$ ssh root@192.168.10.4`
+  `user@host$ ssh root@192.168.10.4`
 - Mount host directory
-  `root@ettus-e3xx-sg1:~# sshfs cjam@192.168.10.1:/home/cjam/Documents ./colter/`
+  `root@ettus-e3xx-sg1:~# sshfs user@host:/home/user/Documents ./mounted_dir/`
 
 #### Starting Gnu radio over ssh with x forwarding
 
 from host machine log into e310 with ssh (with x forwarding):
 `cjam@mistic-spruce$ ssh -X root@192.168.10.4`
+
 then start gnu radio companion:
 `root@ettus-e3xx-sg1:~# gnuradio-companion`
 
