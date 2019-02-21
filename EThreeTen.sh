@@ -1,6 +1,7 @@
 
 #!/usr/bin/env bash
-SCRIPT_DIR=`dirname $0`
+# Find the source directory of our scripts so we can include our config
+# We have to use readlink since we symlink our scripts in the install process
 SCRIPTS_PATH="$(dirname "$(readlink -f "$0")")"
 
 # Source in Configuration
